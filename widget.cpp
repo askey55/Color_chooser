@@ -34,23 +34,23 @@ void Widget::changeColor()
     ui->widget->setStyleSheet(background_color);
 }
 
-void Widget::on_horizontalSlider_r_sliderMoved(int position)
+void Widget::on_horizontalSlider_r_valueChanged(int value)
 {
-    position_r = position;
+    position_r = value;
     this->changeColor();
-    ui->label_r_value->setText(QString::number(position));
+    ui->label_r_value->setText(QString::number(value));
 }
 
-void Widget::on_horizontalSlider_g_sliderMoved(int position)
+void Widget::on_horizontalSlider_g_valueChanged(int value)
 {
-    position_g = position;
+    position_g = value;
     this->changeColor();
-    ui->label_g_value->setText(QString::number(position));
+    ui->label_g_value->setText(QString::number(value));
 }
 
-void Widget::on_horizontalSlider_b_sliderMoved(int position)
+void Widget::on_horizontalSlider_b_valueChanged(int value)
 {
-    position_b = position;
+    position_b = value;
     this->changeColor();
-    ui->label_b_value->setText(QString::number(position));
+    ui->label_b_value->setText(QString::number(value));
 }

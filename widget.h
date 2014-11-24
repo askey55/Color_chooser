@@ -16,11 +16,11 @@ public:
     ~Widget();
 
 private slots:
-    void on_horizontalSlider_r_sliderMoved(int position);
+    void on_horizontalSlider_r_valueChanged(int value);
 
-    void on_horizontalSlider_g_sliderMoved(int position);
+    void on_horizontalSlider_g_valueChanged(int value);
 
-    void on_horizontalSlider_b_sliderMoved(int position);
+    void on_horizontalSlider_b_valueChanged(int value);
 
 private:
     int position_r;
@@ -29,6 +29,5 @@ private:
     Ui::Widget *ui;
     void changeColor();
 };
-
 
 #endif // WIDGET_H
