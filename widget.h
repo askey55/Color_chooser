@@ -23,12 +23,11 @@ private slots:
     void on_horizontalSlider_b_sliderMoved(int position);
 
 private:
+    Ui::Widget *ui;
     int position_r;
     int position_g;
     int position_b;
-    Ui::Widget *ui;
     void changeColor();
 };
-
 
 #endif // WIDGET_H
