@@ -21,17 +21,7 @@ Widget::~Widget()
 
 void Widget::changeColor()
 {
-    QString background_color;
-
-    background_color = "background-color:rgb(";
-    background_color += QString::number(position_r);
-    background_color += ",";
-    background_color += QString::number(position_g);
-    background_color += ",";
-    background_color += QString::number(position_b);
-    background_color += ")";
-
-    ui->widget->setStyleSheet(background_color);
+    ui->widget->setStyleSheet(QString("background-color: rgb(%1, %2, %3);").arg(position_r).arg(position_g).arg(position_b));
 }
 
 void Widget::on_horizontalSlider_r_sliderMoved(int position)
