@@ -14,6 +14,7 @@ class Widget : public QWidget
 public:
     explicit Widget(QWidget *parent = 0);
     ~Widget();
+    void initialize();
 
 private slots:
     void on_horizontalSlider_r_valueChanged(int value);

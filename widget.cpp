@@ -19,6 +19,11 @@ Widget::~Widget()
     delete ui;
 }
 
+void Widget::initialize()
+{
+    this->changeColor();
+}
+
 void Widget::changeColor()
 {
     ui->widget->setStyleSheet(QString("background-color: rgb(%1, %2, %3);").arg(position_r).arg(position_g).arg(position_b));
